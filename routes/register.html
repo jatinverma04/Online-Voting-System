@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Voting System -Registration</title>
+   <!-- <link rel="stylesheet" href="../css/stylesheet.css">-->
+</head>
+<body>
+    <style>
+
+#headersection{
+    padding: 2px;
+    background-color: bisque;
+}
+ 
+#headersection h1{
+    font-family: cursive;
+
+}
+
+#bodysection{
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+#address{
+            width: 20%;
+        
+        }
+#imagepart{
+
+            border: 2px  solid black;
+            background-color: mistyrose;
+            border-radius: 10px;
+            padding: 10px;
+            width: 30%;
+        }
+#role{
+            border: 2px  solid black;
+            background-color: mistyrose;
+            border-radius: 10px;
+            padding: 10px;
+            width: 30%;
+        }
+#role select{
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        #mid{
+            text-align: center;
+        }
+
+        #bodysection{
+            text-align: center;
+        }
+
+
+
+        input{
+    padding: 10px;
+    border-radius: 5px;
+ }
+
+ #dropbox{
+     padding: 10px;
+     border-radius: 5px;
+     width: 20%;
+ }
+
+    </style>
+
+    <div id="headersection">
+        
+    <h1>
+        <img src="photos/img.png" alt="" width="50" height="38" class="d-inline-block align-text-center">
+        Online Voting System
+    </h1>
+
+    
+    
+    <hr>
+</div>
+    <div id="bodysection">
+        <h2>
+             Registration
+        </h2>
+
+        <form action="../api/register.php"   method="post" enctype="multipart/form-data">
+             <input type="text"  name="name"  placeholder="Enter Name">
+             <input type="number"  name="mobile"  placeholder="Enter Mobile"><br><br>
+
+             <input type="password"  name="password"  placeholder="password">
+             <input type="password"  name="cpassword"  placeholder="Confirm password"><br><br>
+
+            
+        
+             <input id="address" type="text"  name="address"  placeholder="Enter Address"><br><br>
+            
+             <center>
+             <div id="imagepart">
+                   Upload Image:<input type="file"  name="photo"><br><br>
+             </div>
+            <br>
+            <div id="role">        
+              Select Role:<select name="role">
+                  <option value="1">Voter</option>
+                  <option value="2">Group</option>
+                 </select>
+            </div> 
+              
+                <br><br>  
+                  <button style=" padding: 5px;
+
+                  font-size: 15px;
+                  border-radius: 5px;
+                  background-color: rgba(96, 250, 232, 0.829);">Register</button><br><br>
+                  Already user?<a href="../routes/login.html">Login here</a>
+                </center> 
+                <br><br> 
+                <hr>
+            </div>
+         </form>         
+    </div>
+
+
+</body>
+</html>
